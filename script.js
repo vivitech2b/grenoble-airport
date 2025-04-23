@@ -14,12 +14,14 @@ window.onload = () => {
 
     arrivees.forEach(vol => {
         const li = document.createElement('li');
+        li.classList.add('mb-2');
         li.textContent = `${vol.heure} - ${vol.vol} - en provenance de ${vol.provenance}`;
         arriveesList.appendChild(li);
     });
 
     departs.forEach(vol => {
         const li = document.createElement('li');
+        li.classList.add('mb-2');
         li.textContent = `${vol.heure} - ${vol.vol} - destination ${vol.destination}`;
         departsList.appendChild(li);
     });
