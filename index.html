@@ -2,58 +2,78 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aéroport Grenoble-Isère</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Aéroport Grenoble-Isère</h1>
-        <nav>
-            <a href="#vols">Vols</a>
-            <a href="#acces">Accès</a>
-            <a href="#contact">Contact</a>
-        </nav>
+    <header class="bg-dark text-white py-4">
+        <div class="container">
+            <h1 class="text-center">Aéroport Grenoble-Isère</h1>
+            <nav class="text-center">
+                <a href="#vols" class="text-white mx-3">Vols</a>
+                <a href="#acces" class="text-white mx-3">Accès</a>
+                <a href="#contact" class="text-white mx-3">Contact</a>
+            </nav>
+        </div>
     </header>
 
-    <section class="hero">
-        <h2>Bienvenue à Grenoble-Isère</h2>
-        <p>Votre porte d'entrée vers les Alpes françaises</p>
+    <section class="hero text-center text-white py-5" style="background: url('https://images.unsplash.com/photo-1579546929518-9e396f3cc809') center/cover; background-size: cover;">
+        <div class="container">
+            <h2>Bienvenue à Grenoble-Isère</h2>
+            <p>Votre porte d'entrée vers les Alpes françaises</p>
+        </div>
     </section>
 
-    <section id="vols">
-        <h2>Informations vols</h2>
-        <div class="vols-container">
-            <div id="arrivees">
-                <h3>Arrivées</h3>
-                <ul></ul>
-            </div>
-            <div id="departures">
-                <h3>Départs</h3>
-                <ul></ul>
+    <section id="vols" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Informations vols</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="arrivees" class="bg-light p-4 rounded shadow">
+                        <h3>Arrivées</h3>
+                        <ul class="list-unstyled"></ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="departures" class="bg-light p-4 rounded shadow">
+                        <h3>Départs</h3>
+                        <ul class="list-unstyled"></ul>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="acces">
-        <h2>Accès & Transports</h2>
-        <p>L’aéroport est accessible via l’autoroute A48, à 40 minutes de Grenoble.</p>
-        <ul>
-            <li>Navettes régulières depuis Grenoble</li>
-            <li>Parking longue et courte durée</li>
-            <li>Accès taxi et VTC</li>
-        </ul>
+    <section id="acces" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Accès & Transports</h2>
+            <p>L’aéroport est accessible via l’autoroute A48, à 40 minutes de Grenoble.</p>
+            <ul class="list-unstyled">
+                <li>Navettes régulières depuis Grenoble</li>
+                <li>Parking longue et courte durée</li>
+                <li>Accès taxi et VTC</li>
+            </ul>
+        </div>
     </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email : info@grenoble-airport.fr</p>
-        <p>Téléphone : +33 (0)4 76 65 48 48</p>
+    <section id="contact" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact</h2>
+            <p>Email : info@grenoble-airport.fr</p>
+            <p>Téléphone : +33 (0)4 76 65 48 48</p>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2025 Aéroport Grenoble-Isère</p>
+    <footer class="bg-dark text-white py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Aéroport Grenoble-Isère</p>
+            <p><a href="#" class="text-white">Mentions légales</a> | <a href="#" class="text-white">Plan du site</a></p>
+        </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
